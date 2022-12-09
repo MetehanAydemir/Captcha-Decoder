@@ -47,6 +47,6 @@ while number_files<limit:
 
         print(img.location,img.size)
         get_captcha(driver, img, "Image{}.png".format(number_files))
-
+        driver.close()
     except:
         pass
